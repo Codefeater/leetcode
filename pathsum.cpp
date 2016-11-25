@@ -8,3 +8,24 @@ bool hasPathSum(TreeNode *root, int sum) {
         if (root->val == sum && root->left ==  NULL && root->right == NULL) return true;
         return hasPathSum(root->left, sum-root->val) || hasPathSum(root->right, sum-root->val);
     }
+/*
+Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
+-----------------------------------------BackTracking-------------------------------------------------
+*/
+class Solution {
+public:
+    vector<vector<int>> pathSum(TreeNode* root, int sum) {
+        vector<vector<int>> paths;
+        vector<int> path;
+        findPaths(root, sum, path, paths);
+        return paths;
+    }
+    void findPaths(TreeNode* node, int sum, vector<int>& path, vector<vector<int>>& paths){
+        if (!node) return;
+        path.push_back(node -> val);
+        if (!(node -> left) && !(node -> right) && sum == node -> val) paths.push_back(path);
+        findPaths(node -> left, sum - node -> val, path, paths);
+        findPaths(node -> right, sum - node -> val, path,paths);
+        path.pop_back();
+    }
+};
