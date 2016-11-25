@@ -29,3 +29,23 @@ public:
         path.pop_back();
     }
 };
+
+/*
+Find the number of paths that sum to a given value.
+*/
+class Solution {
+public:
+    int pathSum(TreeNode* root, int sum) {
+        if (root == NULL) return 0;
+        return findPath(root, sum) + pathSum(root -> left, sum) + pathSum(root -> right, sum);
+    }
+    
+    int findPath(TreeNode* root, int sum){
+        int res = 0;
+        if (root == NULL) return res;
+        if (sum == root.val) res ++;
+        res += findPath(root -> left, sum - root -> val);
+        res += findPath(root -> right, sum - root ->val);
+        return res;
+    }
+};
