@@ -47,7 +47,7 @@ private:
 
 
 
-深度优先：伪代码
+//深度优先：伪代码
 void DFS(int v)
   visited[v] = true
   for (v的每一个邻接点w)
@@ -55,7 +55,7 @@ void DFS(int v)
       DFS(w)
       
       
-广度优先：伪代码
+//广度优先：伪代码
 void BFS(int x)
   visited[x] = true
   Queue.push(x)
