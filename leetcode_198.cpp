@@ -2,9 +2,7 @@ class Solution {
 public:
     vector<int> result;
     int solve(int idx,vector<int>& nums){
-        if (idx < 0){
-            return 0;
-        }
+        if (idx < 0) return 0;
         if (result[idx] >= 0){
             return result[idx];
         }
