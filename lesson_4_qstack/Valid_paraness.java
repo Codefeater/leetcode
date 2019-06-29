@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Valid_paraness {
     public boolean isValid(String s) {
-        Stack<Character> sk = new Stack();
+        Stack<Character> sk = new Stack<>();
         for (int i = 0; i < s.length(); i ++){
             if (sk.empty()) sk.add(s.charAt(i));
             else if (s.charAt(i) == ']' && sk.peek() =='[') sk.pop();

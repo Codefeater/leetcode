@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class Map_Lesson {
     public int[] intersect(int[] nums1, int[] nums2) {
-        HashMap<Integer, Integer> map = new HashMap();
+        HashMap<Integer, Integer> map = new HashMap<>();
         ArrayList<Integer> result = new ArrayList<>();
 
         for (int i = 0; i < nums1.length; i ++){
