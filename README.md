@@ -1,2 +1,2 @@
 # leetcode
-Leetcode Easy
+Leetcode Ready
