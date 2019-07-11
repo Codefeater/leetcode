@@ -1,4 +1,4 @@
-package lesson_3_linkedlist;
+package leetcode.lesson_3_linkedlist;
 
 public class SwapNodePairs {
     public ListNode swapPairs(ListNode head) {

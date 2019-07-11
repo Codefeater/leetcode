@@ -1,4 +1,4 @@
-package lesson_6_RecursiveAndBacktracking;
+package leetcode.lesson_6_RecursiveAndBacktracking;
 
 
 public class WordSearch {

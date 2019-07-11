@@ -1,4 +1,4 @@
-package lesson_8_GreedyAlgor;
+package leetcode.lesson_8_GreedyAlgor;
 
 import java.util.Arrays;
 

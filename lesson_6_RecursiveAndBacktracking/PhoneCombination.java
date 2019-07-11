@@ -1,4 +1,4 @@
-package lesson_6_RecursiveAndBacktracking;
+package leetcode.lesson_6_RecursiveAndBacktracking;
 
 import java.util.ArrayList;
 import java.util.List;

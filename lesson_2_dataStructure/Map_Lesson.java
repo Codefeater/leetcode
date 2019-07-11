@@ -1,4 +1,4 @@
-package lesson_2_dataStructure;
+package leetcode.lesson_2_dataStructure;
 
 import java.util.ArrayList;
 import java.util.HashMap;

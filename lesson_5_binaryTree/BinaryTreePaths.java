@@ -1,4 +1,4 @@
-package lesson_5_binaryTree;
+package leetcode.lesson_5_binaryTree;
 
 import java.util.ArrayList;
 import java.util.List;

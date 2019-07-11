@@ -1,4 +1,4 @@
-package lesson_3_linkedlist;
+package leetcode.lesson_3_linkedlist;
 
 public class RevreseLinkedList {
         public ListNode reverseList(ListNode head) {

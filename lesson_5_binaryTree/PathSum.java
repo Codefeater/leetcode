@@ -1,4 +1,4 @@
-package lesson_5_binaryTree;
+package leetcode.lesson_5_binaryTree;
 
 public class PathSum {
     public boolean hasPathSum(TreeNode root, int sum) {

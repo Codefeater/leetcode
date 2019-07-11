@@ -1,4 +1,4 @@
-package lesson_6_RecursiveAndBacktracking;
+package leetcode.lesson_6_RecursiveAndBacktracking;
 
 public class NumIslands {
     private int[][] d = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};

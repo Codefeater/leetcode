@@ -1,4 +1,4 @@
-package lesson_1_array;
+package leetcode.lesson_1_array;
 
 public class LeastLengthSubArray {
     public static void main(String[] args) {

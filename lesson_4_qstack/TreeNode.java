@@ -1,4 +1,4 @@
-package lesson_4_qstack;
+package leetcode.lesson_4_qstack;
 
 public class TreeNode
 {

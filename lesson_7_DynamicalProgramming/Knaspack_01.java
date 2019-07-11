@@ -1,4 +1,4 @@
-package lesson_7_DynamicalProgramming;
+package leetcode.lesson_7_DynamicalProgramming;
 
 import java.util.Arrays;
 

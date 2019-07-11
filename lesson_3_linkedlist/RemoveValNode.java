@@ -1,4 +1,4 @@
-package lesson_3_linkedlist;
+package leetcode.lesson_3_linkedlist;
 
 public class RemoveValNode {
     public ListNode removeElements(ListNode head, int val) {
