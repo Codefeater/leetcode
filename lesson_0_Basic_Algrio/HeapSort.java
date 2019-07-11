@@ -22,7 +22,7 @@ public class HeapSort {
             if (j + 1 <= count && data[j] < data[j + 1]) j ++;
             if (data[j] <= data[k]) break;
             exch(k,j);
-            k = j
+            k = j;
         }
     }
 
