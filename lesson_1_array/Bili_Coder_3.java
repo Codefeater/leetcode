@@ -10,19 +10,17 @@ public class Bili_Coder_3 {
     }
 
     public int lengthOfLongestSubstring(String s) {
-        int l = 0, r = 0;
-        int[] sarray = new int[256];
-        int ans = 0;
+        int[] nums = new int[256];
+        int res = 0;
+        int lo = -1, hi = 0;
 
-        while (r < s.length()) {
-            if (r == s.length()) return ans;
+        while (hi < s.length()){
 
+            if (nums[s.charAt(hi)] == 0) nums[s.charAt(hi ++)] ++;
+            else nums[s.charAt( ++ lo)] --;
 
-            if (sarray[s.charAt(r)] == 0) sarray[s.charAt(r++)]++;
-            else sarray[s.charAt(l++)]--;
-
-            ans = Math.max(ans, r - l);
+            res = Math.max(res, hi - lo - 1);
         }
-        return ans;
+        return res;
     }
 }
