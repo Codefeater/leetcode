@@ -1,4 +1,4 @@
-package leetcode.lesson_0_Basic_Algrio;
+package leetcode.lesson_Basic_Algrio;
 
 public class HeapSort {
     public int[] data;

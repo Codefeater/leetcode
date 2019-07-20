@@ -1,4 +1,4 @@
-package leetcode.lesson_3_linkedlist;
+package leetcode.lesson_9_wechat;
 
 public class ListNode {
     int val;
