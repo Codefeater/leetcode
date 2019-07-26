@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Permutation {
+public class Permutation_46 {
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> ans = new ArrayList<List<Integer>>();
         List<Integer> aux = new ArrayList<>();
@@ -31,8 +31,12 @@ public class Permutation {
         }
     }
 
+
+
+
+
     public static void main(String[] args){
-        Permutation pt = new Permutation();
+        Permutation_46 pt = new Permutation_46();
         int[] nums = new int[]{1,2,3};
         System.out.println(pt.permute(nums));
     }
