@@ -17,7 +17,7 @@ public class RevreseLinkedList_206 {
             if (head == null || head.next == null) return head;
             ListNode p = reverseListRecur(head.next);
             head.next.next = head;
-            head.next = p;
+            head.next = null;
             return p;
         }
 
