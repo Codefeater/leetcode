@@ -14,6 +14,7 @@ public class Inorder_Iterative {
                 root = root.left;
             }
             root = sk.pop();
+            //pop记录数据，到底
             ans.add(root.val);
             root = root.right;
         }

@@ -10,6 +10,7 @@ public class PreOrder_Iterative {
         Stack<TreeNode> sk = new Stack<>();
         while (!sk.empty() || root != null){
            while(root != null) {
+               //pre依赖pop存储元素，后续找right
                sk.add(root);
                ans.add(root.val);
                root = root.left;
