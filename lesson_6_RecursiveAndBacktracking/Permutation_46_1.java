@@ -9,11 +9,11 @@ public class Permutation_46_1 {
         List<List<Integer>> ans = new ArrayList<List<Integer>>();
         List<Integer> aux = new ArrayList<>();
         boolean[] momo = new boolean[nums.length + 1];
-        findCombine(nums, ans, momo, 0, aux);
+        findpermutate(nums, ans, momo, 0, aux);
         return ans;
     }
 
-    public void findCombine(int[] nums, List<List<Integer>> ans, boolean[] momo, int index, List<Integer> aux){
+    public void findpermutate(int[] nums, List<List<Integer>> ans, boolean[] momo, int index, List<Integer> aux){
         if (nums.length == index) {
             ans.add(new ArrayList<>(aux));
             return;
@@ -22,7 +22,7 @@ public class Permutation_46_1 {
             if (!momo[i]){
                 aux.add(nums[i]);
                 momo[i] = true;
-                findCombine(nums, ans, momo, index + 1, aux);
+                findpermutate(nums, ans, momo, index + 1, aux);
                 aux.remove(new Integer(nums[i]));
                 momo[i] = false;
             }
