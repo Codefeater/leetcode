@@ -11,6 +11,9 @@ public class Combinations {
         return ans;
     }
 
+
+    // 求解Cnk, 当前已经找到的组合存储在c中，需要从start开始搜索新的元素
+    // 题目如何思考，就是先想想流程该是什么样子，典型的回溯问题
     public void findCombinations(int n, List<List<Integer>> ans, List<Integer> aux, int index, int k){
         if (aux.size() == k){
             ans.add(new ArrayList<>(aux));
