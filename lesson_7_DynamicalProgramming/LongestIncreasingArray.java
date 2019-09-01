@@ -9,7 +9,8 @@ public class LongestIncreasingArray {
         Arrays.fill(momo, 1);
 
         int res = 0;
-
+        // LIS(i) 表示第i个位结尾(一定是结尾数字)，最长的上升子序列
+        // 题目还是比较有价值的，最大的值保存在数组中，需要遍历的时候保存，并不是数组的最后一个值
         for (int i = 0; i < nums.length; i ++){
             for (int j = 0; j < i; j ++){
                 if (nums[i] > nums[j]) momo[i] = Math.max(momo[i], momo[j] + 1);
