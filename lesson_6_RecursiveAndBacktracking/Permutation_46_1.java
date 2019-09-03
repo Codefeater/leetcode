@@ -29,10 +29,6 @@ public class Permutation_46_1 {
         }
     }
 
-
-
-
-
     public static void main(String[] args){
         Permutation_46_1 pt = new Permutation_46_1();
         int[] nums = new int[]{1,2,3};
