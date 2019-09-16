@@ -4,7 +4,7 @@ public class HeapSort {
     public int[] data;
     public int count;
 
-    public void exch(int a, int b){
+    public void each(int a, int b){
         int tmp  = data[a];
         data[a] = data[b];
         data[b] = tmp;
@@ -12,7 +12,7 @@ public class HeapSort {
 
     public void swim(int k){
         while (k > 1 && data[k/2] < data[k]){
-            exch(k/2, k);
+            each(k/2, k);
         }
     }
 
@@ -21,7 +21,7 @@ public class HeapSort {
             int j = 2 * k;
             if (j + 1 <= count && data[j] < data[j + 1]) j ++;
             if (data[j] <= data[k]) break;
-            exch(k,j);
+            each(k,j);
             k = j;
         }
     }
