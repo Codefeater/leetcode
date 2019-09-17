@@ -8,15 +8,15 @@ public class MergeSort {
     public int[] msort(int[] nums){
         aux = new int[nums.length];
 
-        mergesort(nums, 0, nums.length - 1);
+        mergers(nums, 0, nums.length - 1);
         return nums;
     }
 
-    public void mergesort(int[] nums, int lo, int hi){
+    public void mergers(int[] nums, int lo, int hi){
         if (hi <= lo) return;
         int mid = (hi - lo)/2 + lo;
-        mergesort(nums, lo, mid);
-        mergesort(nums, mid + 1, hi);
+        mergers(nums, lo, mid);
+        mergers(nums, mid + 1, hi);
         merge(nums, lo, mid, hi);
     }
 
