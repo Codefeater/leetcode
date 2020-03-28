@@ -1,11 +1,11 @@
 package leetcode.lesson_1_array;
 
-public class Bili_Coder_3 {
+public class lengthOfLongestSubstring_3 {
     public static void main(String[] args) {
 
         String str = "abcadc";
 
-        Bili_Coder_3 mss = new Bili_Coder_3();
+        lengthOfLongestSubstring_3 mss = new lengthOfLongestSubstring_3();
         System.out.println(mss.lengthOfLongestSubstring(str));
     }
 
