@@ -19,7 +19,6 @@ public class Trie {
         node.setEnd();
     }
 
-
     public TrieNode searchPrefix(String word) {
         TrieNode node = root;
         for (int i = 0; i < word.length(); i++) {
