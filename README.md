@@ -1,6 +1,4 @@
-# leetcode
-
-### For Each Lesson, Practice More 
+## For Each Lesson, Practice More 
 
 - Lesson0: SwordOffer
 
