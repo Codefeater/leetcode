@@ -1,23 +1,23 @@
 # leetcode
 
-For Each Lesson, Practice More 
+### For Each Lesson, Practice More 
 
-Lesson0: SwordOffer
+- Lesson0: SwordOffer
 
-Lesson1: Array
+- Lesson1: Array
 
-Lesson2: DataStruct
+- Lesson2: DataStruct
 
-Lesson3: LinkedList
+- Lesson3: LinkedList
 
-Lesson4: Stack
+- Lesson4: Stack
 
-Lesson5: BinaryTree
+- Lesson5: BinaryTree
 
-Lesson6: RecursiveAndBacktracking
+- Lesson6: RecursiveAndBacktracking
 
-Lesson7: DynamicalProgramming
+- Lesson7: DynamicalProgramming
 
-Lesson8: Greedy
+- Lesson8: Greedy
 
-Lesson9: BasicAlgorithm
+- Lesson9: BasicAlgorithm
