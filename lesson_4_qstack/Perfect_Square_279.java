@@ -13,7 +13,6 @@ public class Perfect_Square_279 {
              if (i - j*j > 0) nums[i] = Math.min(nums[i - j * j] + nums[j * j], nums[i]);
              else  nums[i] = 1;
              j ++;
-
             }
 
         }
