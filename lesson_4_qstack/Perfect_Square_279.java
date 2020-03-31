@@ -14,7 +14,6 @@ public class Perfect_Square_279 {
              else  nums[i] = 1;
              j ++;
             }
-
         }
         return nums[n];
     }
