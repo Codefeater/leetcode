@@ -3,7 +3,7 @@ package leetcode.lesson_1_array;
 public class binarySearch {
     public static void main(String[] args) {
         binarySearch bs = new binarySearch();
-        int[] nums = {-1, 0, 3, 5, 9, 1};
+        int[] nums = {-1, 0, 3, 5, 9};
         System.out.println(bs.search(nums, 9));
     }
 
@@ -18,10 +18,8 @@ public class binarySearch {
                 return mid;
             }
 
-            if (nums[mid] > targrt) {
-                left = mid - 1;
-            } else
-                right = mid + 1;
+            if (nums[mid] > targrt) left = mid - 1;
+            else right = mid + 1;
         }
         return -1;
     }
