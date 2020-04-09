@@ -1,4 +1,4 @@
-package leetcode.lesson_1_array;
+package leetcode.lesson_7_DynamicalProgramming;
 
 public class maxSubArray_53 {
     public int maxSubArray(int[] nums) {
