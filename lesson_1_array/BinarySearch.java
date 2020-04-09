@@ -1,8 +1,8 @@
 package leetcode.lesson_1_array;
 
-public class binarySearch {
+public class BinarySearch {
     public static void main(String[] args) {
-        binarySearch bs = new binarySearch();
+        BinarySearch bs = new BinarySearch();
         int[] nums = {-1, 0, 3, 5, 9};
         System.out.println(bs.search(nums, 9));
     }
