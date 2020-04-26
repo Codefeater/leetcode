@@ -1,15 +1,15 @@
 package leetcode.lesson_5_binaryTree;
 
 public class ArrIsSeqOfBst {
-    public boolean verfitySeqOfBst(int[] seq, int length){
+    public boolean verfitySeqOfBst(int[] seq, int length) {
         if (seq == null || length <= 0) return false;
         int root = seq[length - 1];
         int i = 0;
-        for (; i < length - 1; ++ i){
+        for (; i < length - 1; ++i) {
             if (seq[i] > root) break;
         }
         int j = i;
-        for (; j < length - 1; ++ j){
+        for (; j < length - 1; ++j) {
             if (seq[j] < root) return false;
         }
         boolean left = true;

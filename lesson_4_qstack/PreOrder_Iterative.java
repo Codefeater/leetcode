@@ -8,15 +8,15 @@ public class PreOrder_Iterative {
     public List<Integer> preorderTraversal(TreeNode root) {
         ArrayList<Integer> ans = new ArrayList<>();
         Stack<TreeNode> sk = new Stack<>();
-        while (!sk.empty() || root != null){
-           while(root != null) {
-               //pre依赖pop存储元素，后续找right
-               sk.add(root);
-               ans.add(root.val);
-               root = root.left;
-           }
-           root = sk.pop();
-           root = root.right;
+        while (!sk.empty() || root != null) {
+            while (root != null) {
+                //pre依赖pop存储元素，后续找right
+                sk.add(root);
+                ans.add(root.val);
+                root = root.left;
+            }
+            root = sk.pop();
+            root = root.right;
         }
         return ans;
     }

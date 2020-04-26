@@ -7,26 +7,26 @@ import java.util.Queue;
 
 public class TreeNodelevelOrder {
     public List<List<Integer>> levelOrder(TreeNode root) {
-       List<List<Integer>> res = new ArrayList<>();
-       if (root == null) return res;
-       Queue<TreeNode> queue = new LinkedList<>();
+        List<List<Integer>> res = new ArrayList<>();
+        if (root == null) return res;
+        Queue<TreeNode> queue = new LinkedList<>();
 
-       queue.offer(root);
+        queue.offer(root);
 
-       while (!queue.isEmpty()){
-           List<Integer> aux = new ArrayList<>();
-           int n = queue.size();
-           for (int i = 0; i < n; i ++){
+        while (!queue.isEmpty()) {
+            List<Integer> aux = new ArrayList<>();
+            int n = queue.size();
+            for (int i = 0; i < n; i++) {
 
-               TreeNode tr = queue.poll();
-               aux.add(tr.val);
-               if (tr.left != null) queue.offer(tr.left);
-               if (tr.right != null) queue.offer(tr.right);
+                TreeNode tr = queue.poll();
+                aux.add(tr.val);
+                if (tr.left != null) queue.offer(tr.left);
+                if (tr.right != null) queue.offer(tr.right);
 
-           }
-           res.add(new ArrayList<>(aux));
-       }
+            }
+            res.add(new ArrayList<>(aux));
+        }
 
-       return res;
+        return res;
     }
 }

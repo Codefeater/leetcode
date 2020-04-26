@@ -3,6 +3,13 @@ package leetcode.lesson_8_GreedyAlgor;
 import java.util.Arrays;
 
 public class Assign_Cookie_455 {
+    public static void main(String[] args) {
+        Assign_Cookie_455 ac = new Assign_Cookie_455();
+        int[] g = {1, 2};
+        int[] s = {1, 2, 3};
+        System.out.println(ac.findContentChildren(g, s));
+    }
+
     public int findContentChildren(int[] g, int[] s) {
         Arrays.sort(g);
         Arrays.sort(s);
@@ -15,16 +22,8 @@ public class Assign_Cookie_455 {
                 ans++;
                 j--;
             }
-            ;
             i--;
         }
         return ans;
-    }
-
-    public static void main(String[] args){
-        Assign_Cookie_455 ac = new Assign_Cookie_455();
-        int[] g = {1,2};
-        int[] s = {1,2,3};
-        System.out.println(ac.findContentChildren(g,s));
     }
 }

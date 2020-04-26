@@ -14,10 +14,10 @@ public class lengthOfLongestSubstring_3 {
         int res = 0;
         int lo = -1, hi = 0;
 
-        while (hi < s.length()){
+        while (hi < s.length()) {
 
-            if (nums[s.charAt(hi)] == 0) nums[s.charAt(hi ++)] ++;
-            else nums[s.charAt( ++ lo)] --;
+            if (nums[s.charAt(hi)] == 0) nums[s.charAt(hi++)]++;
+            else nums[s.charAt(++lo)]--;
 
             res = Math.max(res, hi - lo - 1);
         }

@@ -1,7 +1,7 @@
 package leetcode.lesson_Hard_Algrio.Trie;
 
 public class Trie {
-    private TrieNode root;
+    private final TrieNode root;
 
     public Trie() {
         root = new TrieNode();

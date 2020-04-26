@@ -5,12 +5,13 @@ import java.util.List;
 
 public class Inorder_Recurive {
     public List<Integer> ans = new ArrayList<>();
+
     public List<Integer> inorderTraversal(TreeNode root) {
         assist(root);
         return ans;
     }
 
-    public void assist(TreeNode root){
+    public void assist(TreeNode root) {
         if (root == null) return;
 
         assist(root.left);

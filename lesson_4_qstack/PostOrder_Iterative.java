@@ -15,26 +15,26 @@ public class PostOrder_Iterative {
         res.add(root.val);
     }
 
-//    Recursive
-public List<Integer> postorderTraversal(TreeNode root) {
-    List<Integer> ans = new ArrayList<Integer>();
-    if (root == null) return ans;
-    Stack<TreeNode> sk = new Stack<TreeNode>();
+    //    Recursive
+    public List<Integer> postorderTraversal(TreeNode root) {
+        List<Integer> ans = new ArrayList<Integer>();
+        if (root == null) return ans;
+        Stack<TreeNode> sk = new Stack<TreeNode>();
 
-    sk.push(root);
-    while (!sk.empty()) {
-        TreeNode aux = sk.peek();
-        if (aux.left == null && aux.right == null) {
-            ans.add(sk.pop().val);
-        } else {
-            if (aux.right != null) sk.push(aux.right);
-            if (aux.left != null) sk.push(aux.left);
-            aux.right = null;
-            aux.left = null;
+        sk.push(root);
+        while (!sk.empty()) {
+            TreeNode aux = sk.peek();
+            if (aux.left == null && aux.right == null) {
+                ans.add(sk.pop().val);
+            } else {
+                if (aux.right != null) sk.push(aux.right);
+                if (aux.left != null) sk.push(aux.left);
+                aux.right = null;
+                aux.left = null;
+            }
         }
+        return ans;
     }
-    return ans;
-}
 
     //    Iterative
     public List<Integer> posterIterative(TreeNode root) {

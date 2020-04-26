@@ -2,7 +2,7 @@ package leetcode.lesson_Hard_Algrio.Trie;
 
 public class TrieNode {
     private final int R = 26;
-    private TrieNode[] links;
+    private final TrieNode[] links;
     private boolean isEnd;
 
     public TrieNode() {

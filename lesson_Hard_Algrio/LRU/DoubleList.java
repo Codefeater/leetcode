@@ -1,7 +1,8 @@
 package leetcode.lesson_Hard_Algrio.LRU;
 
 public class DoubleList {
-    private Node head, tail;
+    private final Node head;
+    private final Node tail;
     private int size;
 
     public DoubleList() {

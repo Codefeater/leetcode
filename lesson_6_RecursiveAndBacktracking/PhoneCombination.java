@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PhoneCombination {
-    private static String[] letterMap = {
+    private static final String[] letterMap = {
             " ",
             "",
             "abc",
@@ -17,6 +17,10 @@ public class PhoneCombination {
             "wxyz"
     };
 
+    public static void main(String[] args) {
+        PhoneCombination pc = new PhoneCombination();
+        System.out.println(pc.letterCombinations("3456"));
+    }
 
     public List<String> letterCombinations(String digits) {
         List<String> ans = new ArrayList<>();
@@ -28,21 +32,15 @@ public class PhoneCombination {
         return ans;
     }
 
-
-    public void findCombinations(String digits, int index, List<String> ans, String bub){
+    public void findCombinations(String digits, int index, List<String> ans, String bub) {
         if (digits.length() == index) {
             ans.add(bub);
             return;
         }
 
         int sz = digits.charAt(index) - '0';
-        for (int i = 0; i < letterMap[sz].length(); i ++){
+        for (int i = 0; i < letterMap[sz].length(); i++) {
             findCombinations(digits, index + 1, ans, bub + letterMap[sz].charAt(i));
         }
-    }
-
-    public static void main(String[] args) {
-        PhoneCombination pc = new PhoneCombination();
-        System.out.println(pc.letterCombinations("3456"));
     }
 }

@@ -6,7 +6,7 @@ public class SwapNodePairs {
         dummyHead.next = head;
 
         ListNode cur = dummyHead;
-        while (cur.next != null && cur.next.next != null){
+        while (cur.next != null && cur.next.next != null) {
             ListNode next = cur.next;
             ListNode curN = cur.next.next.next;
 

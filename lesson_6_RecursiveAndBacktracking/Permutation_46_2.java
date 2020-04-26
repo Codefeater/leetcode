@@ -16,10 +16,10 @@ public class Permutation_46_2 {
         return ans;
     }
 
-    public void backtrack(int n, List<Integer> aux, List<List<Integer>> ans, int idx){
+    public void backtrack(int n, List<Integer> aux, List<List<Integer>> ans, int idx) {
         if (idx == n) ans.add(new ArrayList<>(aux));
 
-        for (int i = idx; i < n; i ++){
+        for (int i = idx; i < n; i++) {
             Collections.swap(aux, idx, i);
 
             backtrack(n, aux, ans, idx + 1);

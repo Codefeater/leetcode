@@ -3,7 +3,7 @@ package leetcode.lesson_0_SwordOffer;
 public class SingleNumberIII_260 {
     public int[] singleNumber(int[] nums) {
         int diff = 0, num1 = 0, num2 = 0;
-        for(int num : nums) diff ^= num;
+        for (int num : nums) diff ^= num;
         int indexOf = getIndex(diff);
 
         for (int j = 0; j < nums.length; ++j)
@@ -12,17 +12,17 @@ public class SingleNumberIII_260 {
         return new int[]{num1, num2};
     }
 
-    public int getIndex(int miniArr){
+    public int getIndex(int miniArr) {
         int indexBit = 0;
-        while ((miniArr & 1) == 0){
+        while ((miniArr & 1) == 0) {
             miniArr = miniArr >> 1;
-            indexBit ++;
+            indexBit++;
         }
         return indexBit;
     }
 
-    public boolean isbit(int num, int Index){
+    public boolean isbit(int num, int Index) {
         num = num >> Index;
-        return (num & 1) == 1 ? true : false;
+        return (num & 1) == 1;
     }
 }

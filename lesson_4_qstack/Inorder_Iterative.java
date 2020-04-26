@@ -8,8 +8,8 @@ public class Inorder_Iterative {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> ans = new ArrayList<>();
         Stack<TreeNode> sk = new Stack<>();
-        while (root != null || !sk.empty()){
-            while (root != null){
+        while (root != null || !sk.empty()) {
+            while (root != null) {
                 sk.add(root);
                 root = root.left;
             }

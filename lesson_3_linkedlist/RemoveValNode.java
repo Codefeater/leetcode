@@ -7,10 +7,10 @@ public class RemoveValNode {
         dummyHead.next = head;
 
         ListNode cur = dummyHead;
-        while(cur.next != null){
-            if (cur.next.val == val){
+        while (cur.next != null) {
+            if (cur.next.val == val) {
                 cur.next = cur.next.next;
-            }else{
+            } else {
                 cur = cur.next;
             }
         }

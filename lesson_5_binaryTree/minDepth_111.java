@@ -6,7 +6,7 @@ public class minDepth_111 {
         return ans;
     }
 
-    public int assist(TreeNode root){
+    public int assist(TreeNode root) {
         if (root == null) return 0;
         if (root.left == null && root.right == null) return 1;
 

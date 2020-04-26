@@ -7,9 +7,9 @@ public class DeleteLastKNodeLinkedList {
         ListNode cur = DummyNode;
         ListNode pre = DummyNode;
 
-        for (int i = 0; i < n; i ++) cur = cur.next;
+        for (int i = 0; i < n; i++) cur = cur.next;
 
-        while(cur.next != null) {
+        while (cur.next != null) {
             cur = cur.next;
             pre = pre.next;
         }

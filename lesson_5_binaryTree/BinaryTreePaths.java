@@ -13,12 +13,12 @@ public class BinaryTreePaths {
         }
 
         List<String> lefts = binaryTreePaths(root.left);
-        for (int i = 0; i < lefts.size(); i ++){
+        for (int i = 0; i < lefts.size(); i++) {
             ans.add(root.val + "->" + lefts.get(i));
         }
 
         List<String> rights = binaryTreePaths(root.right);
-        for (int i = 0; i < rights.size(); i ++){
+        for (int i = 0; i < rights.size(); i++) {
             ans.add(root.val + "->" + rights.get(i));
         }
         return ans;

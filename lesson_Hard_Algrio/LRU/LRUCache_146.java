@@ -4,9 +4,9 @@ import java.util.HashMap;
 
 public class LRUCache_146 {
     //    core idea: map(k, node), doubleList(node)
-    private HashMap<Integer, Node> map;
-    private DoubleList cache;
-    private int cap;
+    private final HashMap<Integer, Node> map;
+    private final DoubleList cache;
+    private final int cap;
 
     public LRUCache_146(int capacity) {
         this.cap = capacity;
