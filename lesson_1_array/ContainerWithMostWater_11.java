@@ -9,6 +9,7 @@ public class ContainerWithMostWater_11 {
             if (height[lo] < height[hi]) lo++;
             else hi--;
         }
+
         return area;
     }
 }
