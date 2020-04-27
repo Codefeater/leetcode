@@ -7,7 +7,6 @@ public class MinStack_155 {
     public Stack<Integer> imp_sk = new Stack<>();
     public Stack<Integer> aux_sk = new Stack<>();
 
-
     public void push(int x) {
         imp_sk.push(x);
         if (aux_sk.empty() || x <= getMin()) aux_sk.push(x);
